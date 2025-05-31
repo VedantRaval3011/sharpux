@@ -69,13 +69,13 @@ const About = () => {
               
               <ScrollReveal direction="left" delay={0.4}>
                 <p className="text-lg text-gray-600 mb-6">
-                  SharpUX is a specialized development agency focused on delivering high-quality digital products that solve real business challenges. With expertise across multiple technologies and platforms, I create custom solutions tailored to your unique needs.
+                  SharpUX is a specialized development agency based in Vadodara, focused on delivering high-quality digital products that solve real business challenges. With expertise across multiple technologies and platforms, We create custom solutions tailored to your unique needs.
                 </p>
               </ScrollReveal>
               
               <ScrollReveal direction="left" delay={0.6}>
                 <p className="text-lg text-gray-600 mb-8">
-                  My mission is to help businesses and individuals establish powerful digital presences through intuitive, scalable, and beautifully crafted applications.
+                  Our mission is to help businesses and individuals establish powerful digital presences through intuitive, scalable, and beautifully crafted applications.
                 </p>
               </ScrollReveal>
               
