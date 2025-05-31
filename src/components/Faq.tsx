@@ -1,6 +1,6 @@
-'use client'
-import React, { useState } from 'react';
-import { ChevronDown, MessageCircle, Zap, Shield, Users, Clock, Code, Sparkles } from 'lucide-react';
+"use client"
+import React, { useState } from "react";
+import { ChevronDown, MessageCircle, Zap, Shield, Users, Clock, Code, Sparkles } from "lucide-react";
 
 interface FAQItem {
   id: string;
@@ -12,82 +12,82 @@ interface FAQItem {
 
 const faqData: FAQItem[] = [
   {
-    id: '1',
-    question: 'What services does SharpUX offer?',
-    answer: 'We specialize in custom software development, web applications, mobile app development, UI/UX design, cloud solutions, and digital transformation consulting. Our team delivers end-to-end solutions from concept to deployment and ongoing maintenance.',
-    category: 'Services',
+    id: "1",
+    question: "What services does SharpUX offer?",
+    answer: "We specialize in custom software development, web applications, mobile app development, UI/UX design, cloud solutions, and digital transformation consulting. Our team delivers end-to-end solutions from concept to deployment and ongoing maintenance.",
+    category: "Services",
     icon: <Code className="w-5 h-5" />
   },
   {
-    id: '2',
-    question: 'How long does it typically take to develop a custom software solution?',
-    answer: 'Project timelines vary based on complexity and scope. Simple web applications take 4-8 weeks, while complex enterprise solutions may require 3-6 months. We provide detailed project timelines during our initial consultation and keep you updated throughout the development process.',
-    category: 'Timeline',
+    id: "2",
+    question: "How long does it typically take to develop a custom software solution?",
+    answer: "Project timelines vary based on complexity and scope. Simple web applications take 4-8 weeks, while complex enterprise solutions may require 3-6 months. We provide detailed project timelines during our initial consultation and keep you updated throughout the development process.",
+    category: "Timeline",
     icon: <Clock className="w-5 h-5" />
   },
   {
-    id: '3',
-    question: 'What technologies and frameworks do you work with?',
-    answer: 'We work with modern technologies including React, Next.js, Node.js, TypeScript, Python, AWS, Azure, Docker, and more. Our tech stack is chosen based on your specific needs, ensuring scalability, performance, and maintainability.',
-    category: 'Technology',
+    id: "3",
+    question: "What technologies and frameworks do you work with?",
+    answer: "We work with modern technologies including React, Next.js, Node.js, TypeScript, Python, AWS, Azure, Docker, and more. Our tech stack is chosen based on your specific needs, ensuring scalability, performance, and maintainability.",
+    category: "Technology",
     icon: <Zap className="w-5 h-5" />
   },
   {
-    id: '4',
-    question: 'Do you provide ongoing support and maintenance?',
-    answer: 'Yes, we offer comprehensive post-launch support including bug fixes, security updates, performance optimization, and feature enhancements. Our maintenance packages are tailored to your needs with 24/7 monitoring options available.',
-    category: 'Support',
+    id: "4",
+    question: "Do you provide ongoing support and maintenance?",
+    answer: "Yes, we offer comprehensive post-launch support including bug fixes, security updates, performance optimization, and feature enhancements. Our maintenance packages are tailored to your needs with 24/7 monitoring options available.",
+    category: "Support",
     icon: <Shield className="w-5 h-5" />
   },
   {
-    id: '5',
-    question: 'How do you ensure the security of our software and data?',
-    answer: 'Security is paramount in our development process. We implement industry best practices including secure coding standards, regular security audits, encryption, secure authentication, and compliance with regulations like GDPR and SOC 2.',
-    category: 'Security',
+    id: "5",
+    question: "How do you ensure the security of our software and data?",
+    answer: "Security is paramount in our development process. We implement industry best practices including secure coding standards, regular security audits, encryption, secure authentication, and compliance with regulations like GDPR and SOC 2.",
+    category: "Security",
     icon: <Shield className="w-5 h-5" />
   },
   {
-    id: '6',
-    question: 'Can you work with our existing team or do you handle everything?',
-    answer: 'We offer flexible engagement models. We can work as an extension of your existing team, provide dedicated developers, or handle the entire project independently. Our collaborative approach ensures seamless integration with your business processes.',
-    category: 'Collaboration',
+    id: "6",
+    question: "Can you work with our existing team or do you handle everything?",
+    answer: "We offer flexible engagement models. We can work as an extension of your existing team, provide dedicated developers, or handle the entire project independently. Our collaborative approach ensures seamless integration with your business processes.",
+    category: "Collaboration",
     icon: <Users className="w-5 h-5" />
   },
   {
-    id: '7',
-    question: 'What is your pricing model?',
-    answer: 'We offer flexible pricing models including fixed-price projects, hourly rates, and dedicated team arrangements. Pricing depends on project complexity, timeline, and resource requirements. We provide transparent quotes with no hidden costs.',
-    category: 'Pricing',
+    id: "7",
+    question: "What is your pricing model?",
+    answer: "We offer flexible pricing models including fixed-price projects, hourly rates, and dedicated team arrangements. Pricing depends on project complexity, timeline, and resource requirements. We provide transparent quotes with no hidden costs.",
+    category: "Pricing",
     icon: <Sparkles className="w-5 h-5" />
   },
   {
-    id: '8',
-    question: 'How do you handle project communication and updates?',
-    answer: 'We maintain transparent communication through regular meetings, detailed progress reports, and collaborative tools like Slack or Teams. You\'ll have direct access to your project manager and development team throughout the process.',
-    category: 'Communication',
+    id: "8",
+    question: "How do you handle project communication and updates?",
+    answer: "We maintain transparent communication through regular meetings, detailed progress reports, and collaborative tools like Slack or Teams. You'll have direct access to your project manager and development team throughout the process.",
+    category: "Communication",
     icon: <MessageCircle className="w-5 h-5" />
   },
   {
-    id: '9',
-    question: 'Do you work with startups or only established companies?',
-    answer: 'We work with businesses of all sizes, from early-stage startups to enterprise corporations. We understand the unique challenges each faces and tailor our approach accordingly, offering scalable solutions that grow with your business.',
-    category: 'Business',
+    id: "9",
+    question: "Do you work with startups or only established companies?",
+    answer: "We work with businesses of all sizes, from early-stage startups to enterprise corporations. We understand the unique challenges each faces and tailor our approach accordingly, offering scalable solutions that grow with your business.",
+    category: "Business",
     icon: <Users className="w-5 h-5" />
   },
   {
-    id: '10',
-    question: 'What makes SharpUX different from other software agencies?',
-    answer: 'Our focus on user experience, cutting-edge technology, and transparent communication sets us apart. We combine technical expertise with design thinking to create solutions that not only work flawlessly but also delight users and drive business results.',
-    category: 'Company',
+    id: "10",
+    question: "What makes SharpUX different from other software agencies?",
+    answer: "Our focus on user experience, cutting-edge technology, and transparent communication sets us apart. We combine technical expertise with design thinking to create solutions that not only work flawlessly but also delight users and drive business results.",
+    category: "Company",
     icon: <Sparkles className="w-5 h-5" />
   }
 ];
 
-const categories = ['All', 'Services', 'Technology', 'Support', 'Business'];
+const categories = ["All", "Services", "Technology", "Support", "Business"];
 
 export default function FAQSection() {
   const [openItems, setOpenItems] = useState<string[]>([]);
-  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
   const toggleItem = (id: string) => {
     setOpenItems(prev => 
@@ -98,13 +98,13 @@ export default function FAQSection() {
   };
 
   const handleContactClick = () => {
-    const contactSection = document.getElementById('contact');
+    const contactSection = document.getElementById("contact");
     if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+      contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
-  const filteredFAQs = selectedCategory === 'All' 
+  const filteredFAQs = selectedCategory === "All" 
     ? faqData 
     : faqData.filter(item => item.category === selectedCategory);
 
@@ -148,8 +148,8 @@ export default function FAQSection() {
               onClick={() => setSelectedCategory(category)}
               className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 ${
                 selectedCategory === category
-                  ? 'bg-pink-purple-gradient text-white shadow-lg shadow-sharp-pink/25 scale-105'
-                  : 'bg-card hover:bg-accent text-muted-foreground hover:text-foreground border border-border hover:border-sharp-pink/30'
+                  ? "bg-pink-purple-gradient text-white shadow-lg shadow-sharp-pink/25 scale-105"
+                  : "bg-card hover:bg-accent text-muted-foreground hover:text-foreground border border-border hover:border-sharp-pink/30"
               }`}
             >
               {category}
@@ -180,13 +180,13 @@ export default function FAQSection() {
                 
                 <ChevronDown 
                   className={`w-5 h-5 text-muted-foreground group-hover:text-sharp-pink transition-all duration-300 ${
-                    openItems.includes(item.id) ? 'rotate-180' : ''
+                    openItems.includes(item.id) ? "rotate-180" : ""
                   }`}
                 />
               </button>
               
               <div className={`overflow-hidden transition-all duration-300 ${
-                openItems.includes(item.id) ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                openItems.includes(item.id) ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
               }`}>
                 <div className="px-6 pb-6">
                   <div className="pl-12">
