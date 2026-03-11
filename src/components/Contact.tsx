@@ -71,9 +71,21 @@ const Contact = () => {
       link: 'mailto:vedant@sharpux.com'
     },
     {
+      icon: <Mail className="h-5 w-5 text-sharp-pink" />,
+      title: 'Phone (Nikunj Adhiya - CEO)',
+      value: '+91 9313450501',
+      link: 'tel:+919313450501'
+    },
+    {
+      icon: <Mail className="h-5 w-5 text-sharp-pink" />,
+      title: 'Phone (Vedant Raval - CTO)',
+      value: '+91 7990662524',
+      link: 'tel:+917990662524'
+    },
+    {
       icon: <MapPin className="h-5 w-5 text-sharp-pink" />,
       title: 'Location',
-      value: 'Vadodara, Gujarat',
+      value: 'Gujarat',
       link: null
     }
   ];
