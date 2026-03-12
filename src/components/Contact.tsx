@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Mail, MapPin, Send, Check } from 'lucide-react';
+import { Mail, MapPin, Send, Check, Phone } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
@@ -66,18 +66,24 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: <Mail className="h-5 w-5 text-sharp-pink" />,
-      title: 'Email',
+      title: 'Email (CEO)',
+      value: 'nikunj@sharpux.com',
+      link: 'mailto:nikunj@sharpux.com'
+    },
+    {
+      icon: <Mail className="h-5 w-5 text-sharp-pink" />,
+      title: 'Email (CTO)',
       value: 'vedant@sharpux.com',
       link: 'mailto:vedant@sharpux.com'
     },
     {
-      icon: <Mail className="h-5 w-5 text-sharp-pink" />,
+      icon: <Phone className="h-5 w-5 text-sharp-pink" />,
       title: 'Phone (Nikunj Adhiya - CEO)',
       value: '+91 9313450501',
       link: 'tel:+919313450501'
     },
     {
-      icon: <Mail className="h-5 w-5 text-sharp-pink" />,
+      icon: <Phone className="h-5 w-5 text-sharp-pink" />,
       title: 'Phone (Vedant Raval - CTO)',
       value: '+91 7990662524',
       link: 'tel:+917990662524'
