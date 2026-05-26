@@ -66,7 +66,6 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-sharp-white">Contact</h3>
             <ul className="space-y-2">
               <li>Nikunj Adhiya (CEO): +91 9313450501</li>
-              <li>Vedant Raval (CTO): +91 7990662524</li>
               <li><a href="mailto:nikunj@sharpux.com" className="hover:text-sharp-pink">nikunj@sharpux.com</a></li>
               <li><a href="mailto:vedant@sharpux.com" className="hover:text-sharp-pink">vedant@sharpux.com</a></li>
               <li>Gujarat</li>
