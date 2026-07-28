@@ -22,7 +22,7 @@ export async function POST(request: Request) {
     // Send email
     await transporter.sendMail({
       from: `"Sharpux" <${process.env.EMAIL_USER}>`, // Sender address
-      to: 'vedantraval333@gmail.com', // Recipient email
+      to: 'nikunj@sharpux.com', // Recipient email
       subject: `New Contact Form Submission: ${subject}`,
       html: `
         <h2>New Message from ${name}</h2>

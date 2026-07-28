@@ -71,12 +71,6 @@ const Contact = () => {
       link: 'mailto:nikunj@sharpux.com'
     },
     {
-      icon: <Mail className="h-5 w-5 text-sharp-pink" />,
-      title: 'Email (CTO)',
-      value: 'vedant@sharpux.com',
-      link: 'mailto:vedant@sharpux.com'
-    },
-    {
       icon: <Phone className="h-5 w-5 text-sharp-pink" />,
       title: 'Phone (Nikunj Adhiya - CEO)',
       value: '+91 9313450501',
